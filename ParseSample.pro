@@ -1,8 +1,9 @@
 TEMPLATE = app
 
-QT += qml quick
+QT += qml quick widgets
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    parse.cc
 
 RESOURCES += qml.qrc
 
@@ -29,3 +30,7 @@ ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
 
 OTHER_FILES += \
     android/AndroidManifest.xml
+
+HEADERS += \
+    parse.hh \
+    app.hh
